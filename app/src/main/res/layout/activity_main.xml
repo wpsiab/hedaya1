@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landing_page"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_hedaya"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_illustrator"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        />
+
+    <ProgressBar
+        android:progressBackgroundTint="#246D9B"
+        android:progressTint="#EDA107"
+        android:id="@+id/progressBarId"
+        android:layout_margin="40dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        />
+
+
+
+</LinearLayout>

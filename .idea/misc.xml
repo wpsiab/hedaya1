@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/drawable/bg_bottom.xml" value="0.232" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/drawable/card_bg.xml" value="0.232" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/drawable/card_white.xml" value="0.232" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/drawable/home_top.xml" value="0.307" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/drawable/item_bd.xml" value="0.2235" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/drawable/landing_page.xml" value="0.232" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_all_doya.xml" value="0.35054347826086957" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_doya_pray.xml" value="0.3625" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_home.xml" value="0.3625" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_inst.xml" value="0.35054347826086957" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_intro.xml" value="0.35038363171355497" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_monajat.xml" value="0.3578125" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_quran_doya.xml" value="0.3625" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_quran_doya_details.xml" value="0.3625" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_sokol_doya.xml" value="0.3625" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_sokol_doya_details.xml" value="0.19610507246376813" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_soto_doya.xml" value="0.3625" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_soto_doya_details.xml" value="0.35597826086956524" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/activity_timeof_doya.xml" value="0.35054347826086957" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/alldoya_simple_view.xml" value="0.3625" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/quran_sample_view.xml" value="0.3625" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/sample_view.xml" value="0.33" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/DuyaeHedaya/app/src/main/res/layout/sotodoya_sample_view.xml" value="0.3625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
