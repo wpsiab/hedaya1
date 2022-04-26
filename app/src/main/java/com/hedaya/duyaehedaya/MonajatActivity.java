@@ -1,4 +1,4 @@
-package com.example.duyaehedaya;
+package com.hedaya.duyaehedaya;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,7 +13,16 @@ public class MonajatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monajat);
+
+        getSupportActionBar().setTitle("কুরআনের আয়াত দ্বারা মুনাজাত");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         webView = findViewById(R.id.monajatWebViewId);
         webView.loadUrl("file:///android_asset/monajat/monajat.html");
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

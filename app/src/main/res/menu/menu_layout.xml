@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/aboutId"
+        android:enabled="true"
+        android:title="@string/about"
+        android:icon="@drawable/about_icon"
+        />
+    <item
+        android:id="@+id/shareId"
+        android:enabled="true"
+        android:title="@string/share"
+        android:icon="@drawable/share_icon"
+        />
+    <item
+        android:id="@+id/messageId"
+        android:enabled="true"
+        android:title="@string/message"
+        android:icon="@drawable/message_icon"
+
+        />
+</menu>

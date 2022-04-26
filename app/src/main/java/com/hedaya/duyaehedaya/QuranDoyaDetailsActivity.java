@@ -1,11 +1,10 @@
-package com.example.duyaehedaya;
+package com.hedaya.duyaehedaya;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class QuranDoyaDetailsActivity extends AppCompatActivity {
 
@@ -16,6 +15,10 @@ public class QuranDoyaDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quran_doya_details);
+
+
+        getSupportActionBar().setTitle("বিস্তারিত বর্ণনা");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         textView = findViewById(R.id.quranDoyaDetailsId);
         webView = findViewById(R.id.quranDoyaDetailsWebViewId);
@@ -418,7 +421,8 @@ public class QuranDoyaDetailsActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

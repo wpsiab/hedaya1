@@ -1,4 +1,4 @@
-package com.example.duyaehedaya;
+package com.hedaya.duyaehedaya;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,12 +14,16 @@ public class TimeofDoyaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeof_doya);
 
+        getSupportActionBar().setTitle("দোয়া কবুলের সময়");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         webView = findViewById(R.id.timeofDoyaWebViewId);
         webView.loadUrl("file:///android_asset/timeofdoya.html");
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

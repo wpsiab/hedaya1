@@ -313,4 +313,18 @@
         <item>কোন প্রাণী বা যানবাহনে আরােহণ কালে পা পিছলে গেলে পঠিতব্য দোয়া </item>
         <item>ছালাতের মাঝে শয়তানের কুমন্ত্রণা হতে বাঁচার দোয়া</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_app"> ইসলামিক শিক্ষা সমপ্রসারণের জন্য পবিত্র কোরআন, হাদিস এবং ইসলামিক গ্রন্থ থেকে এই দোয়া ও মোনাজাত গুলো সংগৃহীত করা হয়েছে|
+আশাকরি দ্বীন শিক্ষার ক্ষেত্রে আরও একধাপ এগিয়ে নিয়ে যাওয়ার জন্য এই অ্যাপ আপনাদেরকে গুরুত্বপূর্ণ ভূমিকা রাখবে|
+এই অ্যাপ এর ভিতরে কোন প্রকার ভুলক্রটি থাকলে তার জন্য আন্তরিক ক্ষমা প্রার্থনা করছি এবং আপনাদের সুচিন্তিত মতামত আশা করছি|
+মতামত দেওয়ার জন্য মেসেজ বাটনে ক্লিক করে আপনার মতামত লিখুন এবং পাঠিয়ে দিন| আমরা আপনার মতামতকে গুরুত্ব সহকারে|
+ বিবেচনায় রাখবো ইনশাআল্লাহ</string>
+    <string name="abdullah">Md Abdullah \n
+        Ui Designer and Web Developer\n
+        Noon Software LTD, Utah, USA
+    </string>
+    <string name="share">শেয়ার</string>
+    <string name="message">মতামত</string>
+    <string name="about">সম্পর্কিত</string>
 </resources>

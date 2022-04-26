@@ -1,4 +1,4 @@
-package com.example.duyaehedaya;
+package com.hedaya.duyaehedaya;
 
 import org.junit.Test;
 

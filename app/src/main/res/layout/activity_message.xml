@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:weightSum="4"
+android:orientation="vertical"
+tools:context=".MessageActivity">
+
+<LinearLayout
+    android:layout_weight="0.5"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="0dp">
+
+    <EditText
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:id="@+id/nameEditTextId"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="আপনার নাম"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <EditText
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:id="@+id/messageEditTextId"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textMultiLine"
+        android:hint="আপনার মতামত"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+
+<LinearLayout
+    android:gravity="center"
+    android:layout_weight=".5"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <Button
+        android:id="@+id/sendButtonId"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:textSize="17dp"
+        android:text="পাঠিয়ে দিন"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/clearButtonId"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:text="মুছে ফেলুন"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

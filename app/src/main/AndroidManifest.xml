@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.duyaehedaya">
+    package="com.hedaya.duyaehedaya">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,40 +12,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DuyaeHedaya">
         <activity
-            android:name=".SokolDoyaDetailsActivity"
+            android:name="com.hedaya.duyaehedaya.MessageActivity"
             android:exported="false" />
         <activity
-            android:name=".SokolDoyaActivity"
+            android:name="com.hedaya.duyaehedaya.AboutActivity"
             android:exported="false" />
         <activity
-            android:name=".QuranDoyaDetailsActivity"
+            android:name="com.hedaya.duyaehedaya.SokolDoyaDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".QuranDoyaActivity"
+            android:name="com.hedaya.duyaehedaya.SokolDoyaActivity"
             android:exported="false" />
         <activity
-            android:name=".MonajatActivity"
+            android:name="com.hedaya.duyaehedaya.QuranDoyaDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".SotoDoyaDetailsActivity"
+            android:name="com.hedaya.duyaehedaya.QuranDoyaActivity"
             android:exported="false" />
         <activity
-            android:name=".SotoDoyaActivity"
+            android:name="com.hedaya.duyaehedaya.MonajatActivity"
             android:exported="false" />
         <activity
-            android:name=".TimeofDoyaActivity"
+            android:name="com.hedaya.duyaehedaya.SotoDoyaDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".InstActivity"
+            android:name="com.hedaya.duyaehedaya.SotoDoyaActivity"
             android:exported="false" />
         <activity
-            android:name=".IntroActivity"
+            android:name="com.hedaya.duyaehedaya.TimeofDoyaActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name="com.hedaya.duyaehedaya.InstActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.hedaya.duyaehedaya.IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hedaya.duyaehedaya.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hedaya.duyaehedaya.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,12 +1,18 @@
-package com.example.duyaehedaya;
+package com.hedaya.duyaehedaya;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,10 +24,17 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private View doyaAll;
     private View doyapray;
     private Intent intent;
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN );
+        getSupportActionBar().hide();
+
         setContentView(R.layout.activity_home);
 
         quranDoya = findViewById(R.id.quranDoyaId);
@@ -31,6 +44,41 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         doyaSoto = findViewById(R.id.sotoDoyaId);
         doyaAll = findViewById(R.id.allDoyaId);
         doyapray = findViewById(R.id.monajatId);
+        bottomNavigationView = findViewById(R.id.bottomNavigationId);
+
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id = item.getItemId();
+                switch (id){
+                    case R.id.aboutId:
+                        intent = new Intent(HomeActivity.this,AboutActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case R.id.shareId:
+                        Intent intent = new Intent(Intent.ACTION_SENDTO);
+                        intent.setType("text/plain");
+
+                        String subject = "পবিত্র কোরআন মাজিদের দোয়া সমূহ";
+                        String body = "পবিত্র কোরআন মাজিদ ও হাদীসের প্রায় তিন শতাধিক দোয়া এবং মোনাজাত";
+
+                        intent.putExtra(Intent.EXTRA_SUBJECT,subject);
+                        intent.putExtra(Intent.EXTRA_TEXT,body);
+
+                        startActivity(Intent.createChooser(intent,"Share with"));
+                        break;
+
+                    case R.id.messageId:
+                        intent = new Intent(HomeActivity.this,MessageActivity.class);
+                        startActivity(intent);
+                        break;
+
+                }
+                return false;
+            }
+        });
+
 
         quranDoya.setOnClickListener(this);
         doyaIntro.setOnClickListener(this);
@@ -68,4 +116,5 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
 }

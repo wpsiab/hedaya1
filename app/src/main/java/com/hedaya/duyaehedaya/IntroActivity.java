@@ -1,4 +1,4 @@
-package com.example.duyaehedaya;
+package com.hedaya.duyaehedaya;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,14 +14,17 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
+        getSupportActionBar().setTitle("দোয়ার পরিচিতি");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         webView = findViewById(R.id.introWebViewId);
-        webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("file:///android_asset/introdoya.html");
 
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }

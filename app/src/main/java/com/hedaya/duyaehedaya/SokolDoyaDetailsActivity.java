@@ -1,4 +1,4 @@
-package com.example.duyaehedaya;
+package com.hedaya.duyaehedaya;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +16,9 @@ public class SokolDoyaDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sokol_doya_details);
 
+        getSupportActionBar().setTitle("বিস্তারিত বর্ণনা");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         textView = findViewById(R.id.sokolDoyaDetailsId);
         webView = findViewById(R.id.sokolDoyaDetailsWebViewId);
 
@@ -25,7 +28,7 @@ public class SokolDoyaDetailsActivity extends AppCompatActivity {
 
             String value = bundle.getString("sokolDoyaTitle");
 
-            if(value.equals("সকাল সন্ধ্যায় পঠিতব্য দোআ সমূহ")){
+            if(value.equals("সকাল সন্ধ্যায় পঠিতব্য দোয়া সমূহ")){
                 textView.setText(value);
                 webView.loadUrl("file:///android_asset/sokoldoya/1.html");
             }else if(value.equals("শােয়ার দোয়া")){
@@ -352,5 +355,11 @@ public class SokolDoyaDetailsActivity extends AppCompatActivity {
             }
 
         }
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }
